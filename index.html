@@ -20,22 +20,21 @@
 
         <!--HEADER-->
 
-        <header class="header">
+        <header id="header">
             <img src="/images/logo/Reservia.svg" id="logo">
             <nav class="menu">
                 <ul>
                     <li>
-                        <a href="#hebergements" class="hebergements">Hébergements</a>
+                        <a href="#hebergements" class="menus">Hébergements</a>
                     </li>
                     <li>
-                        <a href="#activites" class="activites">Activités</a>
+                        <a href="#activites" class="menus">Activités</a>
                     </li>
-                    <li>
-                        <a href="" class="log">S'inscrire</a>
-                    </li>
+                  
                 
                 </ul>
             </nav>
+            <a href="" class="log">S'inscrire</a>
         </header>
         <section id="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -44,9 +43,12 @@
                 
                     <span class="place-icon "><i class="fas fa-map-marker-alt"></i></span>
                     <input type="search" id="esprecherche" placeholder="Marseille, France">
-                    <div class="search-button">
-                        <a href="#" class="rechercher">
-                            <p class="rechercher"></p> Rechercher</p></a></div>
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <div >
+
+                        <input type="submit" value="Rechercher" class="search-button">
+
+                     </div>
                 
             </form>
             <div class="filtres">
@@ -76,9 +78,9 @@
     <!--HEBERGEMENTS-->
     <section id="partie1">
         <div class="grillepartie1">
-        <div class="hebergementsmarseille">
+        <div class="hebergementsmarseille" id="hebergements">
             <div class="titrepartie1">
-                <h2 class="titre" id="hebergements">Hébergements à Marseille</h2>
+                <h2 class="titre" >Hébergements à Marseille</h2>
             </div>
             <div class="imageshebergements" id="image1">
                 <a href="#"><img class="grilleimage" src="Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
@@ -332,7 +334,7 @@
 </div>
 
 
-<footer class="footer">
+<footer id="footer">
         <div class="rang">
         <div class="rang1">
             <h4>À propos</h4>

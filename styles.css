@@ -13,12 +13,20 @@
    width: 1346px;
    margin: auto;
  }
-header.header{
+ #header{
   display: flex;
   width: 90%;
   margin: auto;
   margin-top: 0px;
+  
 }
+
+#header a.menus{
+
+    padding: 30px 20px 30px 20px;
+}
+
+
 #logo{
  width: 100px;
  height: 37px;
@@ -36,40 +44,29 @@ a.log{
  border-top: 3px solid white;
 }
 nav.menu, ul, li{
+  
   display: flex;
   align-items: center;
   margin-top: 0px;
 
 }
-a.hebergements{
-  padding: 30px 20px 30px 20px;
+
+
+a.menus{
+    
+
   color: black;
   font-size: 14px;
   text-align: center;
   border-top: 3px solid white;
   
 }
-a.hebergements:hover{
+a.menus:hover{
   font-weight: 600;
   background-color: white;
   color: #0065FC;
   border-top: 3px solid #0065FC;
 }
-a.activites{
-  padding: 30px 20px 30px 20px;
-  color: black;
-  font-size: 14px;
-  text-align: center;
-  border-top: 3px solid white;
-}
-a.activites:hover{
-  color: #0065FC;
-  font-weight: 600;
-  background-color: white;
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
-}
-
 
 
 a.log:hover{
@@ -113,6 +110,34 @@ input{
  border: 2px solid #F2F2F2;
  border-right: 0;
 }
+
+input[type=submit]{
+
+background-color: #0065FC;
+ 
+  color: white;
+  padding-left: 9px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  font-size: 17px;
+  font-weight: 100;
+  padding-top: 1px;
+  height: 45px;
+  border-radius: 0 10px 10px 0;
+  border-color:#0065FC;
+  width: fit-content;
+}
+
+input [type=submit]:hover{
+  
+   text-shadow:
+    
+    0.5px 0.5px 0 white;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .25s;
+}
 .search-button{
   background-color: #0065FC;
   color: white;
@@ -129,13 +154,7 @@ input{
 }
 .search-button:hover{
   
-   text-shadow:
-    
-    0.5px 0.5px 0 white;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .25s;
+   font-weight: bold;
 }
 a{
   text-decoration: none;
@@ -694,7 +713,7 @@ div.im1{
 
 /**FOOTER**/
 
-.footer{
+#footer{
   display: flex;
   margin-top: 70px;
   background-color:#F2F2F2;
@@ -1049,8 +1068,20 @@ div.imagespopulaires:hover{
     }
   } 
 
+
+
+  
  @media screen and (max-width: 570px) {
-    header.header{
+   a.log {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    padding: 26px 0px 8px 20px;
+    top: 0;
+    right: 5%;}
+
+
+    #header{
       display: block;
       margin: 0;
       width: 100%;
@@ -1070,10 +1101,14 @@ div.imagespopulaires:hover{
       right:0px;
       bottom: 0px;
       height: 4px;
+      background-image: -webkit-linear-gradient(0deg, #0065FC 50%,#F2F2F2 50%);
+      background-image:-moz-linear-gradient(0deg, #0065FC 50%,#F2F2F2 50%);
+      background-image: -o-linear-gradient(0deg, #0065FC 50%,#F2F2F2 50%);
+    }
       
     
      
-    }
+    
     
     a.hebergements{
       display: flex;
@@ -1116,7 +1151,8 @@ div.imagespopulaires:hover{
     #partie2{
       margin-top: 1270px;
     }
-}
+  }
+
 
 @media screen and (max-width: 520px){
   h2.filtres{
@@ -1133,8 +1169,20 @@ div.imagespopulaires:hover{
   }
 }
 
+@media screen and (min-width: 412px){
+i.fas.fa-search::before {
+    visibility: hidden;
+    display: none;
+}
+
+
+.fa-search:before {
+    content: "\f002";
+}
+}
+
 @media screen and (max-width: 411px){
-  header.header{
+  #header{
     width: 100%;
   }
   #logo{
@@ -1151,6 +1199,25 @@ div.imagespopulaires:hover{
     .search-button{
       display: none;
     }
+
+i.fas.fa-search {
+    position: absolute;
+    background-color: #0065FC;
+    border-radius: 15px;
+    right: 5%;
+    padding: 17px 19px;
+}
+
+
+.fas.fa-search:before {
+    color: white;
+    
+}
+
+.fa-search:before {
+    content: "\f002";
+    
+}
     input{
       position: relative;
       width: 80%;
