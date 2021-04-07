@@ -43,6 +43,13 @@ a.log{
  font-size: 14px;
  border-top: 3px solid white;
 }
+
+a.log:hover{
+  background-color: white;
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
+}
+
 nav.menu, ul, li{
   
   display: flex;
@@ -68,12 +75,6 @@ a.menus:hover{
   border-top: 3px solid #0065FC;
 }
 
-
-a.log:hover{
-  background-color: white;
-  color: #0065FC;
-  border-top: 3px solid #0065FC;
-}
 
 /* MAIN */
 
@@ -193,66 +194,34 @@ h2.filtres{
   display: flex;
   margin-bottom: 15px;
 }
-div.icon-container1{
+div.icon-container1, div.icon-container2, div.icon-container3, div.icon-container4{
   position: absolute;
-  padding: 12px 11px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: #DBEAFF;
   margin: -2px;
+}
+
+div.icon-container1{
+  padding: 12px 11px;
 }
 div.icon-container2{
-  position: absolute;
   padding: 12px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #DBEAFF;
-  margin: -2px;
 }
 div.icon-container3{
-  position: absolute;
   padding: 12px 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #DBEAFF;
-  margin: -2px;
 }
 div.icon-container4{
-  position: absolute;
   padding: 12px 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #DBEAFF;
-  margin: -2px;
 }
 
-.fa-shake-hover:hover {
-  animation: shake 0.42s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+
+i.fas.fa-money-bill-wave::before, i.fas.fa-child::before, i.fas.fa-heart::before, i.fas.fa-dog::before{
+  color: #0065FC;
 }
 
-i.fas.fa-money-bill-wave::before{
-  color: #0065FC;
-}
-i.fas.fa-child::before{
-  color: #0065FC;
-}
-i.fas.fa-heart::before{
-  color: #0065FC;
-}
-i.fas.fa-dog::before{
-  color: #0065FC;
-}
 h3.nomfiltre{
   display: flex;
   font-size: 15px;
@@ -268,7 +237,7 @@ h3.nomfiltre{
 .nomfiltre:hover{
   color: white;
 }
-.economique{
+.filtreschoix{
   display: flex;
   border-radius: 25px;
   background-color: white;
@@ -278,47 +247,7 @@ h3.nomfiltre{
   margin-right: 25px;
   margin-bottom: 10px;
 }
-.economique:hover{
-  background-color: #0065FC;
-}
-.familial{
-  display: flex;
-  border-radius: 25px;
-  background-color: white;
-  border: 2px solid #E4E4E4;
-  height: 40px;
-  font-weight: bold;
-  margin-right: 25px;
-  margin-bottom: 10px;
-}
-.familial:hover{
-  background-color: #0065FC;
-}
-.romantique{
-  display: flex;
-  border-radius: 25px;
-  background-color: white;
-  border: 2px solid #E4E4E4;
-  height: 40px;
-  font-size: 15px;
-  font-weight: bold;
-  margin-right: 25px;
-  margin-bottom: 10px;
-}
-.romantique:hover{
-  background-color: #0065FC;
-}
-.animaux{
-  display: flex;
-  border-radius: 25px;
-  background-color: white;
-  border: 2px solid #E4E4E4;
-  height: 40px;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.animaux:hover{
+.filtreschoix:hover{
   background-color: #0065FC;
 }
 .logementsdispos{
